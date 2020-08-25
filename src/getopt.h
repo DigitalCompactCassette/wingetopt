@@ -13,7 +13,9 @@
 #define __GETOPT_H__
 
 /* All the headers include this file. */
+#if _MSC_VER > 1200
 #include <crtdefs.h>
+#endif
 
 #if defined( WINGETOPT_SHARED_LIB )
 # if defined( BUILDING_WINGETOPT_DLL )
